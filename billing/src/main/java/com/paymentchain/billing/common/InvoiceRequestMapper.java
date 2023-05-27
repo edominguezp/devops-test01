@@ -21,7 +21,7 @@ import org.mapstruct.Mappings;
 public interface InvoiceRequestMapper {
     
       @Mappings({
-        @Mapping(source = "customer", target = "customerId")})
+        @Mapping(source = "customer", target  = "customerId")})
     Invoice InvoiceRequestToInvoice(InvoiceRequest source);
                 
     List<Invoice> InvoiceRequestListToInvoiceList(List<InvoiceRequest> source);
